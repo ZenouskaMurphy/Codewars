@@ -19,8 +19,8 @@ public class Invert{
   for (int i=0; i< array.length; i++){
     current = array[i];
     newest = (current * -1);
-    System.out.println(list);
     list.add(newest);
+    System.out.println(list);
   }
     //return list.toArray(new Integer[list.size()]); //convert int list back into int array for return
     return array;
