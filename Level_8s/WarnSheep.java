@@ -14,7 +14,7 @@ Note: there will always be exactly one wolf in the array.
 
 package Level_8s;
 
- public class ZywOo {
+ public class WarnSheep{
 
    public static String warnTheSheep(String[] array) {
      String findMe = "wolf";

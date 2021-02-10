@@ -5,7 +5,7 @@ For example: month 2 (February), is part of the first quarter; month 6 (June), i
 */
 package Level_8s;
 
-public class Kata2 {
+public class QuarterYear{
     public static int quarterOf(int month) {
       int quarter = 0;
       

@@ -9,7 +9,7 @@ The array will never be empty.
 package Level_8s;
 
 
-public class School{
+public class Average{
 /* Solution 1 */
     public static int getAverage(int[] marks){
       int sum = 0;

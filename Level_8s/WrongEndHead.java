@@ -12,7 +12,7 @@ package Level_8s;
 import java.util.List;
 import java.util.Arrays;
 
-public class WrongEndHead {
+public class WrongEndHead{
 /* Solution 1 */
   public static String[] fixTheMeerkat(String[] arr) {  
     List<String> list = Arrays.asList(arr); //Convert string array to ArrayList

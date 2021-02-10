@@ -10,7 +10,7 @@ Return the total figure the individual will receive as a string prefixed with "Â
 
 package Level_8s;
 
-public class Kata {
+public class CalculateBonus{
 /*Solution 1 */
 public static String bonusTime(final int salary, final boolean bonus) {
     int newSalary;
