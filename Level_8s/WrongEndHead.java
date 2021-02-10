@@ -15,14 +15,14 @@ import java.util.Arrays;
 public class WrongEndHead{
 /* Solution 1 */
   public static String[] fixTheMeerkat(String[] arr) {  
-    List<String> list = Arrays.asList(arr); //Convert string array to ArrayList
+    List<String> list = Arrays.asList(arr); //Convert string array to string list
     for (int i=0; i<list.size(); i++){
       String first = list.get(0);
       String last = list.get(2);
       list.set(0, last);    //list.set(index to be replaced[int], new element for index[string])
       list.set(2, first);
     }
-    return list.toArray(new String[list.size()]); //Convert ArrayList back to string array for return statement
+    return list.toArray(new String[list.size()]); //Convert string list back to string array for return statement
   }
 
 /*Solution 2 */
