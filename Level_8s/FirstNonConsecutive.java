@@ -1,4 +1,4 @@
-/* NOT COMPLETED
+/*COMPLETED
 Your task is to find the first element of an array that is not consecutive.
 
 By not consecutive we mean not exactly 1 larger than the previous element of the array.
@@ -13,23 +13,17 @@ The array will always have at least 2 elements1 and all elements will be numbers
 package Level_8s;
 
 class FirstNonConsecutive {
-    static Integer find(final int[] array) {
-      int current = 0;
-      int nonConsecutive = 0;
-      //pass
-      
-      for(int i=0; i<array.length; i++){
-        current = array[i];
-        if(array[i+1] == (array[i] + 1)){
-          System.out.println("consecutive" + current); //need to return null if whole array is consecutive
-          //pass = null;
-        }
-        else{
-          nonConsecutive = array[i + 1]; //gets all instances of nonconsecutive (needs to just be first instance)
-          System.out.println("Nonconsecutive" + nonConsecutive);
-          //pass = nonConsecutive;
-        }
+  static Integer find(final int[] array) {
+    int current = 0;
+    int next = 0;
+    
+    for(int i=0; i<array.length-1; i++){
+      current = array[i];
+      next = array[i+1];
+      if(next != (current + 1)){
+        return next;
       }
-       return pass;
     }
+     return null;
   }
+}

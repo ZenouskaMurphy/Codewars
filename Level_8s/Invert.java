@@ -8,21 +8,11 @@ invert([]) == []
 
 package Level_8s;
 
-import java.util.List;
-import java.util.ArrayList;
-
 public class Invert{
   public static int[] invert(int[] array){
-    List<Integer> list = new ArrayList<>(); //convert int array to int list
-    int current = 0;
-    int newest = 0;
   for (int i=0; i< array.length; i++){
-    current = array[i];
-    newest = (current * -1);
-    list.add(newest);
-    System.out.println(list);
+    array[i] = array[i]  * -1;
   }
-    //return list.toArray(new Integer[list.size()]); //convert int list back into int array for return
-    return array;
-    }
+  return array;
   }
+}
