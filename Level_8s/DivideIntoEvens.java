@@ -1,4 +1,4 @@
-/* NOT COMPLETED
+/*COMPLETED
 One hot summer day Pete and his friend Billy decided to buy watermelons. They chose the biggest crate. They rushed home, dying of thirst, and decided to divide their loot, however they faced a hard problem.
 
 Pete and Billy are great fans of even numbers, that's why they want to divide the number of watermelons in such a way that each of the two parts consists of an even number of watermelons. However, it is not obligatory that the parts are equal.
@@ -11,24 +11,14 @@ The boys are extremely tired and want to start their meal as soon as possible, t
 package Level_8s;
 
 public class DivideIntoEvens {
-    public static boolean divide(int weight) {
-        boolean even_loads = false;
-        int a = 0;
-        int b = 0;
-        for (int i=0; i<weight; i++)
-          {
-          a = i;
-          b = a + 1;
-        }
-        if (weight == a + b){
-          if ((a % 2 == 0) && (b % 2 == 0)){
-            even_loads = true;
-          }
-          else{
-            even_loads = false;
-          }
-        }
-        return even_loads;
-      }
-    
+  public static boolean divide(int weight) {
+    boolean even_loads;
+    if (weight > 2 && weight % 2 == 0){
+      even_loads = true;
+    }
+    else{
+      even_loads = false;
+    } 
+    return even_loads;
+  }    
 }
