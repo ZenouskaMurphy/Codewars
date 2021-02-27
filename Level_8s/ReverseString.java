@@ -14,7 +14,7 @@ public class ReverseString{
     }
 
     public static String solution2(String str) {
-        /*Solution 2 - char array*/
+        /*Solution 2*/
         String reverse = "";
         for(int i=str.length()-1; i>=0; i--){
             reverse += str.charAt(i);
